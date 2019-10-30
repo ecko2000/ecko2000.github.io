@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+
+	<html>
+		<head>
+		<style>
+			body{background-image: url("https://socialmass.co/wp-content/uploads/2018/09/fondo-gris-pagina-web.jpg");}
+			.pp{color:rgb(75,75,75);text-align: center;text-align: justify;margin-left: 10px;margin-right: 10px;
+			}
+			.cnt{text-align: center;}
+		</style>
+
+			
+	
+</head>
+		
+		<body>
+		<h1> Protocolos IP </h1>
+		<p class="pp">Es un conjunto de normas que permiten que diferentes sistemas por ejemplo (windows y Linux) puedan relacionarse entre si por debajo de su sofware que es completamente difente, esto permitira el intercambio de documentos, datos etc. Por asi decirlo es como el ingles en nuestra sociedad, es un idioma que nos permite comunicarnos con otras personas de otras nacionalidades e idiomas sin necesariamente conocer todos ellos, todo estopasa en el contexto de internet. el protocolo IP es el protocolo de red fundamental usado a través de Internet, las redes domésticas y las redes empresariales. El protocolo IP se utiliza a menudo junto con el protocolo de control de transporte (Transport Control Protocol o TCP) y entonces se les llama de manera intercambiable tanto protocolo IP como protocolo TCP/IP. </p>
+
+		<h1>IPv4 e IPv6 </h1>
+
+		<p class="pp">Estas son las versiones de IP, son las mas comunes IPv4 es lamas antigua pero aun se utiliza cuenta con  cuatro bytes (32 bits) de longitud, actualmente convive con la IPv6 con  16 bytes (128 bits) de longitud, con el tiempo la terminara por sustituir. </p>
+
+		<h1>Funcionamiento de IPv6</h1>
+
+		<p class="pp">Toda cabezera IP empieza con 4 bits para el número de versión (si es IPv4 oIPv6 ), los 4 bits siguientes especifican la longitud de la cabecera. La longitud total se calcula tomando como base este valor multiplicado por 32 bits. Así, 5, el valor más pequeño posible, se corresponde con una longitud de cabecera de 160 bits, lo que se traduce en 20 bytes. os bits del 8 al 15 (Type of Service) pueden contener instrucciones sobre el tratamiento y la prioridad del datagrama. En este sentido, el host puede, por ejemplo, indicar la importancia de aspectos como la fiabilidad, el rendimiento o las demoras en lo que respecta a la transmisión de los datos. </p>
+		<p class="pp">La longitud total señala cuál es el tamaño total del paquete de datos y añade así el tamaño de los datos útiles a la longitud de la cabecera. Debido a que dicho campo tiene una longitud de 16 bits, el límite máximo se sitúa en torno a los 65 635 bytes</p>
+	 	 <img class="cnt" src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Screenshots/ES-Internet-Protocol-1.PNG"  height="270" >
+		<p class="pp">Campos de las IP:</p>
+		<ul class="pp"> <li>Identificación: es el numero que comparten todos los paquetes del datagrama que les identifica.				
+			 <li>Flags (banderas): son 3 bits que indican como debe fragmentarse la informacion, el primer bit siempre es 0, el segundo puede ser 0 o 1, indica si se puede fragmentar el paquete, 0 para si, 1 para no, el tercero tambien puede ser 0 o 1, indica si siguen mas paquetes o esta finalizado, 0 para completo, 1 para indicar que siguen más fragmentos.
+			 <li>Desplazamiento del fragmento:este campo informa al host de destino sobre la parte a la que pertenece un único fragmento para que pueda reconstruir todo el datagrama sin ningún problema. La longitud de 13 bits significa que un datagrama puede dividirse en un máximo de 8192 fragmentos.
+			 <li>Tiempo de vida (TTL): este campo se utiliza para que los paquetes no vagen entre nodos eternamente,el estándar RFC define a los segundos como unidad para este campo de 8 bits y el tiempo de vida máximo asciende a 255 segundos. Para cada nodo de red que pasa, el TTL disminuye como mínimo en 1. Si se alcanza el valor 0, el paquete de datos es descartado automáticamente.
+			 <li>protocolo:el campo del protocolo (8 bits) asigna al paquete de datos el protocolo de transporte correspondiente, como es el caso, por ejemplo, del valor 6 para TCP o del valor 17 para el protocolo UDP. El listado oficial de todos los protocolos posibles fue elaborado en 2002 por la IANA (Internet Assigned Numbers Authority).
+			 <li>Dirección de origen y de destino: a las direcciones IP asignadas al host de origen y al de destino se reservan 32 bits respectivamente, es decir, 4 bytes. Estas direcciones IP se escriben adoptando la forma de cuatro grupos de números decimales separados por un punto. La dirección más baja es 0.0.0.0 y la más alta 255.255.255.255.</ul>
+
+
+	</html>
+
